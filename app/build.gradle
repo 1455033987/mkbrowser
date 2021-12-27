@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.chaquo.python'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "cn.mkblog.www.mkbrowser"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 2
+        versionName "0.2.0813"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk{
+            abiFilters "armeabi-v7a","x86_64","x86","arm64-v8a"
+        }
+        python {
+            // 指定python路径
+            buildPython "/usr/local/bin/python3"
+            // 安装python库
+            pip {
+                install "goose3"
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets{
+        main{
+            jni.srcDirs=[]
+            jniLibs.srcDirs=['src/main/jniLibs']
+            python.srcDir "src/main/python"
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation project(path: ':mymusicplayer')
+    implementation project(path: ':floatingview')
+    implementation project(path: ':zxinglibrary')
+    implementation files('libs/open_sdk_r5990_lite.jar')
+    //    implementation project(path: ':zxinglibrary')
+    //    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
+//    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(path: ':toastlibrary')
+    implementation project(path: ':dkplayer-ui')
+    implementation project(path: ':dkplayer-java')
+    implementation project(path: ':imageselector')
+    implementation project(path: ':camera')
+    implementation project(path: ':fileselectlibrary')
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+    implementation 'com.squareup.okio:okio:1.7.0'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    /*glide  相关依赖*/
+    implementation'com.github.bumptech.glide:glide:4.12.0'
+
+    /*glide高斯模糊  相关依赖*/
+    implementation 'jp.wasabeef:glide-transformations:4.0.1'
+    implementation 'com.yanzhenjie:permission:2.0.2'
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 下拉到底的阴影 -->
+    <color name="colorPrimary">#bababa</color>
+
+    <!-- 导航栏颜色 -->
+    <color name="colorPrimaryDark">#3d3d3d</color>
+    <color name="color_fffffff">#ffffff</color>
+    <color name="color_f5f7fb">#f5f7fb</color>
+    <color name="color_7c8aec">#7c8aec</color>
+    <color name="color_212126">#212126</color>
+    <color name="color_black">#000000</color>
+    <color name="colorAccent">#9b9b9b</color>
+    <color name="colorAccent_href">#379b9b9b</color>
+</resources>

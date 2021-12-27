@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/fp_framework_edit_backgrond">
+
+
+        <TextView
+            android:id="@+id/fp_framework_edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="请输入昵称"
+            android:textColor="@color/color_212126"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/fp_framework_edit_input"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/fp_complete_man_bg_false"
+            android:gravity="center"
+            android:hint="请输入选项内容"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/color_fffffff"
+            android:textSize="15dp">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fp_framework_edit_conform"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fp_framework_dialog_confrim_backgrond"
+                android:gravity="center"
+                android:text="填好啦"
+                android:textColor="@color/color_fffffff" />
+
+            <TextView
+                android:id="@+id/fp_framework_edit_cancel"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/fp_framework_dialog_cancel_backgrond"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/color_black" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

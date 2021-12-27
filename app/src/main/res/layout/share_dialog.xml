@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_dialog_bg"
+    android:divider="@drawable/divider"
+    android:showDividers="middle"
+    android:dividerPadding="3.5dp"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f3f3f3"
+        android:orientation="horizontal">
+
+    <cn.mkblog.www.mkbrowser.CircleImageView
+        android:id="@+id/chat_item_header"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10.0dp"
+        android:layout_marginBottom="6.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_head_default_right" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21.5dp"
+            android:layout_marginLeft="11.5dp"
+            android:text="大大怪"
+            android:textColor="@color/color_212126"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dp"
+        android:layout_marginBottom="20.0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_share_facebook"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawablePadding="5.0dp"
+            android:drawableTop="@drawable/pc"
+            android:gravity="center_horizontal"
+            android:text="访问电脑版"
+            android:textSize="12dp"
+            android:textColor="@color/color_212126"/>
+
+        <TextView
+            android:id="@+id/tv_share_wechat"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawablePadding="5.0dp"
+            android:drawableTop="@drawable/link"
+            android:gravity="center_horizontal"
+            android:text="复制链接"
+            android:textSize="12dp"
+            android:textColor="@color/color_212126"/>
+
+        <TextView
+            android:id="@+id/tv_share_moments"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawablePadding="5.0dp"
+            android:drawableTop="@drawable/scan"
+            android:gravity="center_horizontal"
+            android:text="扫一扫"
+            android:textSize="12dp"
+            android:textColor="@color/color_212126"/>
+
+        <TextView
+            android:id="@+id/tv_share_moments1"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawablePadding="5.0dp"
+            android:drawableTop="@drawable/share"
+            android:gravity="center_horizontal"
+            android:text="分享"
+            android:textSize="12dp"
+            android:textColor="@color/color_212126"/>
+        <TextView
+            android:id="@+id/tv_share_moments2"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawablePadding="5.0dp"
+            android:drawableTop="@drawable/moments"
+            android:gravity="center_horizontal"
+            android:text="朋友圈"
+            android:textSize="12dp"
+            android:textColor="@color/color_212126"/>
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_cancel_share"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dp"
+        android:layout_marginTop="10.0dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="16.0sp"
+        android:textColor="@color/color_212126"
+        android:textStyle="bold" />
+
+</LinearLayout>

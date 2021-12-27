@@ -1,0 +1,4 @@
+include ':app', ':toastlibrary', ':dkplayer-java', ':dkplayer-ui', ':imageselector', ':camera', ':fileselectlibrary'
+include ':mymusicplayer'
+include ':floatingview'
+include ':zxinglibrary'
